@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Welcome Box */
+#welcome-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Message Animation */
+#welcome-message {
+    font-size: 2.5em;
+    color: #333;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Name Prompt Styling */
+#name-prompt {
+    margin-top: 20px;
+}
+
+#name-input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* User Message Styling */
+#user-message {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Reply Form Styling */
+#reply-section {
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #0072ff;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Thank You Message Styling */
+#thank-you-message {
+    margin-top: 30px;
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #155724;
+}

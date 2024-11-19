@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-box">
+        <h1 id="welcome-message">Welcome to My Gift!</h1>
+        <div id="name-prompt">
+            <input type="text" id="name-input" placeholder="Enter your name" required>
+            <button onclick="showMessage()">Submit</button>
+        </div>
+        <h2 id="user-message"></h2>
+
+        <!-- Reply Form -->
+        <div id="reply-section" style="display:none;">
+            <h3>Reply to Victor</h3>
+            <form id="reply-form" action="https://formspree.io/f/xgvezkpz" method="POST" onsubmit="showThankYouMessage(event)">
+                <textarea name="message" id="user-reply" placeholder="Enter your reply here..." required></textarea>
+                <button type="submit">Send Reply</button>
+            </form>
+        </div>
+
+        <!-- Thank You Message -->
+        <div id="thank-you-message" style="display:none;">
+            <h3>Thank You for Your Reply!</h3>
+            <p>Victor appreciates your message. You made his surprise even more special!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
